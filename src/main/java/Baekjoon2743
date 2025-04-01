@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Baekjoon2743 {
+	public static void main(String[] args) { 
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.next(); //하나의 단어만을 입력하는 문제라서 nextLine을 쓰지 않았다
+		sc.close();
+
+	 	int a = str1.length();
+		System.out.print(a < 101? a: “100자리 이하의 단어 입력“);
+	}
+}

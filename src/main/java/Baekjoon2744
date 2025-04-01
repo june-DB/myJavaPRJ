@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Baekjoon2744 { 
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
+		sc.close();
+		
+		StringBuilder res = new StringBuilder();
+		
+		for (char ch : str.toCharArray()) {
+			if (Character.isUpperCase(ch)) { 
+				res.append(Character.isLowerCase(ch)) ;
+			} else if ( Character.isLowerCase(ch)) { 
+				res.append(Character.toUpperCase(ch));
+			} else {
+				res.append(ch);
+			}
+			Systme.out.println(res.toString());
+		}
+}
